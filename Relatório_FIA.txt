@@ -1,0 +1,10 @@
+O código apresenta o jogo de tabuleiro de 1965 BreakThru, como solicitado no trabalho da matéria Fundamentos da Inteligência Artificial da turma 2023/2.  
+- O jogador já inicia como as peças douradas, jogando contra a IA que representa as peças prateadas;
+- A IA foi desenvolvida utilizando a busca MiniMax com poda Alpha Beta, com duas diferentes heurísticas aplicadas, mas só é possível usar uma por vez (uma é a diferença de peças e a outra é a ideia de agrupar o máximo de peças pratas perto do flagship para dificultar sua movimentação;
+- O jogo apresentou mais dificuldade com o uso da diferença de peças, tendo em vista que a força das peças pratas são seu número, e com o agrupamento ela movimenta peças que não terão impacto no jogo;
+- Quanto mais se aumenta a profundidade da busca do minimax, o tempo que leva para executar o movimento aumenta exponencialmente pela explosão de possibilidades que ele deve escanear;
+- Para desenvolver uma IA que seria ativamente um desafio no jogo, seria necessário adicionar ainda mais condições e análises de tabuleiro que resultariam no movimento mais preciso;
+- Sua ordem de prioridade na tomada de decisão é:
+1°- Capturar o flagship
+2°- Capturar outra peça adversária
+3°- Realizar um movimento aleatório (para não seguir sempre a mesma ordem de análise e o movimento aleatório ser na mesma direção, eu randomizei a ordem de possíveis movimentos antes de adicioná-lo na lista de movimentos possíveis)
