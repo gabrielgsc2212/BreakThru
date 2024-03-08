@@ -299,7 +299,7 @@ class IA_functions:
       
     def minimax_alpha_beta(self, depth, alpha, beta, is_maximizing):
         if depth == 0 or self.game.check_win_dourada() or self.game.check_win_prata():
-            return self.evaluate2(), None
+            return self.number_piece(), None
             
         moves = self.possible_moves()
             
